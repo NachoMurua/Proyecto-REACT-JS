@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./Components/NavBar/NavBar";
+import ItemList from "./Components/ItemListContainer/ItemListContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NikeReact from "./Components/ItemListContainer/imgProductos/NikeReact.png"
+
+import "bulma/css/bulma.css";
+
+function App (){
+    return (
+        <div>
+            <div className="App">
+                <NavBar/>
+            </div>
+            
+            <div className="container">
+                <div className="columns">
+                    <div className="columns is-3">
+                        <ItemList greeting={"Nike epic react 270"} img={NikeReact} />
+                        <ItemList greeting={"Adidas Yeezy 700"}/>
+                        <ItemList greeting={"Puma Slipstream"}/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    )
 }
 
 export default App;
