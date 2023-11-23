@@ -1,7 +1,9 @@
 import NavBar from "./Components/NavBar/NavBar";
 import ItemList from "./Components/ItemListContainer/ItemListContainer";
 
-import NikeReact from "./Components/ItemListContainer/imgProductos/NikeReact.png"
+import NikeReact from "../src/imgProductos/NikeReact.png"
+import Sliptream from "../src/imgProductos/sliptream.png"
+
 
 import "bulma/css/bulma.css";
 
@@ -15,9 +17,8 @@ function App (){
             <div className="container">
                 <div className="columns">
                     <div className="columns is-3">
-                        <ItemList greeting={"Nike epic react 270"} img={NikeReact} />
-                        <ItemList greeting={"Adidas Yeezy 700"}/>
-                        <ItemList greeting={"Puma Slipstream"}/>
+                        <ItemList greeting={"Nike epic react 270"} img={Sliptream}/>
+                        <ItemList greeting={"Adidas Yeezy 700"} img={NikeReact}/>
                     </div>
                 </div>
             </div>
